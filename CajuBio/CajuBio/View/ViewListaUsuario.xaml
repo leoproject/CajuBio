@@ -4,11 +4,12 @@
              x:Class="CajuBio.View.ViewListaUsuario"
              Title="Administrar Usuários">
 
-    <StackLayout BackgroundColor="#024A59">
+    <StackLayout>
         <!--Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" /-->
-        <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
+       
 
         <StackLayout Padding="5,5,0,0" BackgroundColor="#024A59">
+            <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
             <Entry x:Name="txtNome" PlaceholderColor="#c9cacc" Placeholder="Nome do Colaborador" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" TextColor="White"/>
             <Button HorizontalOptions="FillAndExpand" Command="{Binding buscarCommand}" VerticalOptions="StartAndExpand" HeightRequest="60" Text="Buscar"  TextColor="#082140" BackgroundColor="#FFFFFF"/>
         </StackLayout>

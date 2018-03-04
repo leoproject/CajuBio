@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CajuBio.ViewModel;
 
 namespace CajuBio.View
 {
@@ -15,11 +16,9 @@ namespace CajuBio.View
 		public ViewListaUsuario ()
 		{
 			InitializeComponent ();
-		}
-
-        void OnViewUsuario()
-        {
-            Navigation.PushAsync(new ViewUsuario());
+            BindingContext = new ViewModelListaUsuario();
+            ((ViewModelListaUsuario)BindingContext).Navigation = this.Navigation;
         }
+
     }
 }

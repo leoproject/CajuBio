@@ -1717,6 +1717,985 @@ namespace Microsoft.Win32.SafeHandles
 	}
 }
 
+namespace SkiaSharp
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColorSpaceRenderTargetGamma,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public enum SKColorSpaceRenderTargetGamma__SkiaSharp
+	{
+		Linear = 0,
+		Srgb = 1,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColorSpaceFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKColorSpaceFlags__SkiaSharp
+	{
+		None = 0,
+		NonLinearBlending = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColorSpaceGamut,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKColorSpaceGamut__SkiaSharp
+	{
+		Srgb = 0,
+		AdobeRgb = 1,
+		Dcip3D65 = 2,
+		Rec2020 = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColorSpaceTransferFn,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKColorSpaceTransferFn__SkiaSharp
+	{
+		public float fG;
+		public float fA;
+		public float fB;
+		public float fC;
+		public float fD;
+		public float fE;
+		public float fF;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColorSpacePrimaries,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKColorSpacePrimaries__SkiaSharp
+	{
+		public float fRX;
+		public float fRY;
+		public float fGX;
+		public float fGY;
+		public float fBX;
+		public float fBY;
+		public float fWX;
+		public float fWY;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColorType,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKColorType__SkiaSharp
+	{
+		Unknown = 0,
+		Alpha8 = 1,
+		Rgb565 = 2,
+		Argb4444 = 3,
+		Rgba8888 = 4,
+		Bgra8888 = 5,
+		Index8 = 6,
+		Gray8 = 7,
+		RgbaF16 = 8,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKImageInfoNative,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKImageInfoNative__SkiaSharp
+	{
+		public global::System.IntPtr fColorSpace;
+		public int fWidth;
+		public int fHeight;
+		public global::SkiaSharp.SKColorType__SkiaSharp fColorType;
+		public global::SkiaSharp.SKAlphaType__SkiaSharp fAlphaType;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKAlphaType,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKAlphaType__SkiaSharp
+	{
+		Unknown = 0,
+		Opaque = 1,
+		Premul = 2,
+		Unpremul = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKSurfaceProps,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKSurfaceProps__SkiaSharp
+	{
+		public global::SkiaSharp.SKPixelGeometry__SkiaSharp pixelGeometry;
+		public global::SkiaSharp.SKSurfacePropsFlags__SkiaSharp flags;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPixelGeometry,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPixelGeometry__SkiaSharp
+	{
+		Unknown = 0,
+		RgbHorizontal = 1,
+		BgrHorizontal = 2,
+		RgbVertical = 3,
+		BgrVertical = 4,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKSurfacePropsFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKSurfacePropsFlags__SkiaSharp
+	{
+		None = 0,
+		UseDeviceIndependentFonts = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRBackendRenderTargetDesc,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed75" +
+		"6")]
+	public unsafe partial struct GRBackendRenderTargetDesc__SkiaSharp
+	{
+		public int width;
+		public int height;
+		public global::SkiaSharp.GRPixelConfig__SkiaSharp config;
+		public global::SkiaSharp.GRSurfaceOrigin__SkiaSharp origin;
+		public int sampleCount;
+		public int stencilBits;
+		public global::System.IntPtr renderTargetHandle;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRPixelConfig,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum GRPixelConfig__SkiaSharp
+	{
+		Unknown = 0,
+		Alpha8 = 1,
+		Gray8 = 2,
+		Rgb565 = 3,
+		Rgba4444 = 4,
+		Rgba8888 = 5,
+		Bgra8888 = 6,
+		Srgba8888 = 7,
+		Sbgra8888 = 8,
+		Etc1 = 9,
+		RgbaFloat = 10,
+		RgFloat = 11,
+		AlphaHalf = 12,
+		RgbaHalf = 13,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRSurfaceOrigin,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum GRSurfaceOrigin__SkiaSharp
+	{
+		TopLeft = 0,
+		BottomLeft = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRBackendTextureDesc,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct GRBackendTextureDesc__SkiaSharp
+	{
+		public global::SkiaSharp.GRBackendTextureDescFlags__SkiaSharp flags;
+		public global::SkiaSharp.GRSurfaceOrigin__SkiaSharp origin;
+		public int width;
+		public int height;
+		public global::SkiaSharp.GRPixelConfig__SkiaSharp config;
+		public int sampleCount;
+		public global::System.IntPtr textureHandle;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRBackendTextureDescFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed75" +
+		"6")]
+	public enum GRBackendTextureDescFlags__SkiaSharp
+	{
+		None = 0,
+		RenderTarget = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKRect,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKRect__SkiaSharp
+	{
+		public float left;
+		public float top;
+		public float right;
+		public float bottom;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKMatrix,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKMatrix__SkiaSharp
+	{
+		public float scaleX;
+		public float skewX;
+		public float transX;
+		public float skewY;
+		public float scaleY;
+		public float transY;
+		public float persp0;
+		public float persp1;
+		public float persp2;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKColor,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKColor__SkiaSharp
+	{
+		public uint color;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKBlendMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKBlendMode__SkiaSharp
+	{
+		Clear = 0,
+		Src = 1,
+		Dst = 2,
+		SrcOver = 3,
+		DstOver = 4,
+		SrcIn = 5,
+		DstIn = 6,
+		SrcOut = 7,
+		DstOut = 8,
+		SrcATop = 9,
+		DstATop = 10,
+		Xor = 11,
+		Plus = 12,
+		Modulate = 13,
+		Screen = 14,
+		Overlay = 15,
+		Darken = 16,
+		Lighten = 17,
+		ColorDodge = 18,
+		ColorBurn = 19,
+		HardLight = 20,
+		SoftLight = 21,
+		Difference = 22,
+		Exclusion = 23,
+		Multiply = 24,
+		Hue = 25,
+		Saturation = 26,
+		Color = 27,
+		Luminosity = 28,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPointMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPointMode__SkiaSharp
+	{
+		Points = 0,
+		Lines = 1,
+		Polygon = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPoint,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKPoint__SkiaSharp
+	{
+		public float x;
+		public float y;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKClipOperation,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKClipOperation__SkiaSharp
+	{
+		Difference = 0,
+		Intersect = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKRectI,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKRectI__SkiaSharp
+	{
+		public int left;
+		public int top;
+		public int right;
+		public int bottom;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKLatticeInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKLatticeInternal__SkiaSharp
+	{
+		public int* fXDivs;
+		public int* fYDivs;
+		public global::SkiaSharp.SKLatticeFlags__SkiaSharp* fFlags;
+		public int fXCount;
+		public int fYCount;
+		public global::SkiaSharp.SKRectI__SkiaSharp* fBounds;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKLatticeFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKLatticeFlags__SkiaSharp
+	{
+		Default = 0,
+		Transparent = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPaintStyle,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPaintStyle__SkiaSharp
+	{
+		Fill = 0,
+		Stroke = 1,
+		StrokeAndFill = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKStrokeCap,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKStrokeCap__SkiaSharp
+	{
+		Butt = 0,
+		Round = 1,
+		Square = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKStrokeJoin,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKStrokeJoin__SkiaSharp
+	{
+		Miter = 0,
+		Mitter = 0,
+		Round = 1,
+		Bevel = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKFilterQuality,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKFilterQuality__SkiaSharp
+	{
+		None = 0,
+		Low = 1,
+		Medium = 2,
+		High = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKTextAlign,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKTextAlign__SkiaSharp
+	{
+		Left = 0,
+		Center = 1,
+		Right = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKTextEncoding,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKTextEncoding__SkiaSharp
+	{
+		Utf8 = 0,
+		Utf16 = 1,
+		Utf32 = 2,
+		GlyphId = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKFontMetrics,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKFontMetrics__SkiaSharp
+	{
+		public uint flags;
+		public float top;
+		public float ascent;
+		public float descent;
+		public float bottom;
+		public float leading;
+		public float avgCharWidth;
+		public float maxCharWidth;
+		public float xMin;
+		public float xMax;
+		public float xHeight;
+		public float capHeight;
+		public float underlineThickness;
+		public float underlinePosition;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPaintHinting,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPaintHinting__SkiaSharp
+	{
+		NoHinting = 0,
+		Slight = 1,
+		Normal = 2,
+		Full = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKSizeI,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKSizeI__SkiaSharp
+	{
+		public int width;
+		public int height;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKShaderTileMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKShaderTileMode__SkiaSharp
+	{
+		Clamp = 0,
+		Repeat = 1,
+		Mirror = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKImageCachingHint,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKImageCachingHint__SkiaSharp
+	{
+		Allow = 0,
+		Disallow = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKEncodedImageFormat,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKEncodedImageFormat__SkiaSharp
+	{
+		Bmp = 0,
+		Gif = 1,
+		Ico = 2,
+		Jpeg = 3,
+		Png = 4,
+		Wbmp = 5,
+		Webp = 6,
+		Pkm = 7,
+		Ktx = 8,
+		Astc = 9,
+		Dng = 10,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathDirection,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathDirection__SkiaSharp
+	{
+		Clockwise = 0,
+		CounterClockwise = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathAddMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathAddMode__SkiaSharp
+	{
+		Append = 0,
+		Extend = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathFillType,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathFillType__SkiaSharp
+	{
+		Winding = 0,
+		EvenOdd = 1,
+		InverseWinding = 2,
+		InverseEvenOdd = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathArcSize,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathArcSize__SkiaSharp
+	{
+		Small = 0,
+		Large = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathConvexity,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathConvexity__SkiaSharp
+	{
+		Unknown = 0,
+		Convex = 1,
+		Concave = 2,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathSegmentMask,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathSegmentMask__SkiaSharp
+	{
+		Line = 1,
+		Quad = 2,
+		Conic = 4,
+		Cubic = 8,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathMeasureMatrixFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" +
+		"")]
+	public enum SKPathMeasureMatrixFlags__SkiaSharp
+	{
+		GetPosition = 1,
+		GetTangent = 2,
+		GetPositionAndTangent = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathOp,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathOp__SkiaSharp
+	{
+		Difference = 0,
+		Intersect = 1,
+		Union = 2,
+		Xor = 3,
+		ReverseDifference = 4,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPathVerb,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPathVerb__SkiaSharp
+	{
+		Move = 0,
+		Line = 1,
+		Quad = 2,
+		Conic = 3,
+		Cubic = 4,
+		Close = 5,
+		Done = 6,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKBlurStyle,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKBlurStyle__SkiaSharp
+	{
+		Normal = 0,
+		Solid = 1,
+		Outer = 2,
+		Inner = 3,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKBlurMaskFilterFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKBlurMaskFilterFlags__SkiaSharp
+	{
+		None = 0,
+		IgnoreTransform = 1,
+		HighQuality = 2,
+		All = 3,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKCropRectFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKCropRectFlags__SkiaSharp
+	{
+		HasNone = 0,
+		HasLeft = 1,
+		HasTop = 2,
+		HasWidth = 4,
+		HasHeight = 8,
+		HasAll = 15,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKDisplacementMapEffectChannelSelectorType,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToke" +
+		"n=0738eb9f132ed756")]
+	public enum SKDisplacementMapEffectChannelSelectorType__SkiaSharp
+	{
+		Unknown = 0,
+		R = 1,
+		G = 2,
+		B = 3,
+		A = 4,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKDropShadowImageFilterShadowMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9" +
+		"f132ed756")]
+	public enum SKDropShadowImageFilterShadowMode__SkiaSharp
+	{
+		DrawShadowAndForeground = 0,
+		DrawShadowOnly = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPoint3,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKPoint3__SkiaSharp
+	{
+		public float x;
+		public float y;
+		public float z;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPointI,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKPointI__SkiaSharp
+	{
+		public int x;
+		public int y;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKMatrixConvolutionTileMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed" +
+		"756")]
+	public enum SKMatrixConvolutionTileMode__SkiaSharp
+	{
+		Clamp = 0,
+		Repeat = 1,
+		ClampToBlack = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKHighContrastConfig,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKHighContrastConfig__SkiaSharp
+	{
+		public byte fGrayscale;
+		public global::SkiaSharp.SKHighContrastConfigInvertStyle__SkiaSharp fInvertStyle;
+		public float fContrast;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKHighContrastConfigInvertStyle,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f1" +
+		"32ed756")]
+	public enum SKHighContrastConfigInvertStyle__SkiaSharp
+	{
+		NoInvert = 0,
+		InvertBrightness = 1,
+		InvertLightness = 2,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKTypefaceStyle,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKTypefaceStyle__SkiaSharp
+	{
+		Normal = 0,
+		Bold = 1,
+		Italic = 2,
+		BoldItalic = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKFontStyleSlant,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKFontStyleSlant__SkiaSharp
+	{
+		Upright = 0,
+		Italic = 1,
+		Oblique = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKEncoding,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKEncoding__SkiaSharp
+	{
+		Utf8 = 0,
+		Utf16 = 1,
+		Utf32 = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKDocumentPdfMetadataInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public unsafe partial struct SKDocumentPdfMetadataInternal__SkiaSharp
+	{
+		public global::System.IntPtr Title;
+		public global::System.IntPtr Author;
+		public global::System.IntPtr Subject;
+		public global::System.IntPtr Keywords;
+		public global::System.IntPtr Creator;
+		public global::System.IntPtr Producer;
+		public global::SkiaSharp.SKTimeDateTimeInternal__SkiaSharp* Creation;
+		public global::SkiaSharp.SKTimeDateTimeInternal__SkiaSharp* Modified;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKTimeDateTimeInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKTimeDateTimeInternal__SkiaSharp
+	{
+		public short TimeZoneMinutes;
+		public ushort Year;
+		public byte Month;
+		public byte DayOfWeek;
+		public byte Day;
+		public byte Hour;
+		public byte Minute;
+		public byte Second;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKEncodedInfo,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKEncodedInfo__SkiaSharp
+	{
+		public global::SkiaSharp.SKEncodedInfoColor__SkiaSharp color;
+		public global::SkiaSharp.SKEncodedInfoAlpha__SkiaSharp alpha;
+		public byte bitsPerComponent;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKEncodedInfoColor,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKEncodedInfoColor__SkiaSharp
+	{
+		Gray = 0,
+		GrayAlpha = 1,
+		Palette = 2,
+		Rgb = 3,
+		Rgba = 4,
+		Bgr = 5,
+		Bgrx = 6,
+		Bgra = 7,
+		Yuv = 8,
+		Yuva = 9,
+		InvertedCmyk = 10,
+		Ycck = 11,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKEncodedInfoAlpha,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKEncodedInfoAlpha__SkiaSharp
+	{
+		Opaque = 0,
+		Unpremul = 1,
+		Binary = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKCodecOrigin,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKCodecOrigin__SkiaSharp
+	{
+		TopLeft = 1,
+		TopRight = 2,
+		BottomRight = 3,
+		BottomLeft = 4,
+		LeftTop = 5,
+		RightTop = 6,
+		RightBottom = 7,
+		LeftBottom = 8,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKCodecResult,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKCodecResult__SkiaSharp
+	{
+		Success = 0,
+		IncompleteInput = 1,
+		InvalidConversion = 2,
+		InvalidScale = 3,
+		InvalidParameters = 4,
+		InvalidInput = 5,
+		CouldNotRewind = 6,
+		Unimplemented = 7,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKCodecOptionsInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKCodecOptionsInternal__SkiaSharp
+	{
+		public global::SkiaSharp.SKZeroInitialized__SkiaSharp fZeroInitialized;
+		public global::SkiaSharp.SKRectI__SkiaSharp* fSubset;
+		public global::System.IntPtr fFrameIndex;
+		public byte fHasPriorFrame;
+		public global::SkiaSharp.SKTransferFunctionBehavior__SkiaSharp fPremulBehavior;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKZeroInitialized,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKZeroInitialized__SkiaSharp
+	{
+		Yes = 0,
+		No = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKTransferFunctionBehavior,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed7" +
+		"56")]
+	public enum SKTransferFunctionBehavior__SkiaSharp
+	{
+		Respect = 0,
+		Ignore = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKCodecFrameInfo,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKCodecFrameInfo__SkiaSharp
+	{
+		public global::System.IntPtr requiredFrame;
+		public global::System.IntPtr duration;
+		public byte fullyRecieved;
+		public global::SkiaSharp.SKAlphaType__SkiaSharp alphaType;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKCodecScanlineOrder,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKCodecScanlineOrder__SkiaSharp
+	{
+		TopDown = 0,
+		BottomUp = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKMask,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKMask__SkiaSharp
+	{
+		public global::System.IntPtr image;
+		public global::SkiaSharp.SKRectI__SkiaSharp bounds;
+		public uint rowBytes;
+		public global::SkiaSharp.SKMaskFormat__SkiaSharp format;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKMaskFormat,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKMaskFormat__SkiaSharp
+	{
+		BW = 0,
+		A8 = 1,
+		ThreeD = 2,
+		Argb32 = 3,
+		Lcd16 = 4,
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKBitmapAllocFlags,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKBitmapAllocFlags__SkiaSharp : uint
+	{
+		None = 0x0u,
+		ZeroPixels = 0x1u,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKBitmapResizeMethod,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKBitmapResizeMethod__SkiaSharp
+	{
+		Box = 0,
+		Triangle = 1,
+		Lanczos3 = 2,
+		Hamming = 3,
+		Mitchell = 4,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPMColor,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct SKPMColor__SkiaSharp
+	{
+		public uint color;
+	}
+
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKMatrix44TypeMask,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKMatrix44TypeMask__SkiaSharp
+	{
+		Identity = 0,
+		Translate = 1,
+		Scale = 2,
+		Affine = 4,
+		Perspective = 8,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKPath1DPathEffectStyle,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKPath1DPathEffectStyle__SkiaSharp
+	{
+		Translate = 0,
+		Rotate = 1,
+		Morph = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRBackend,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum GRBackend__SkiaSharp
+	{
+		OpenGL = 0,
+		Vulkan = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRContextOptions,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public unsafe partial struct GRContextOptions__SkiaSharp
+	{
+		public byte fSuppressPrints;
+		public int fMaxTextureSizeOverride;
+		public int fMaxTileSizeOverride;
+		public byte fSuppressDualSourceBlending;
+		public int fBufferMapThreshold;
+		public byte fUseDrawInsteadOfPartialRenderTargetWrite;
+		public byte fImmediateMode;
+		public int fMaxOpCombineLookback;
+		public int fMaxOpCombineLookahead;
+		public byte fUseShaderSwizzling;
+		public byte fDoManualMipmapping;
+		public byte fEnableInstancedRendering;
+		public byte fAllowPathMaskCaching;
+		public byte fRequireDecodeDisableForSRGB;
+		public byte fDisableGpuYUVConversion;
+		public byte fSuppressPathRendering;
+		public global::SkiaSharp.GRContextOptionsGpuPathRenderers__SkiaSharp fGpuPathRenderers;
+		public byte fAvoidStencilBuffers;
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRContextOptionsGpuPathRenderers,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f" +
+		"132ed756")]
+	public enum GRContextOptionsGpuPathRenderers__SkiaSharp
+	{
+		None = 0,
+		DashLine = 1,
+		StencilAndCover = 2,
+		Msaa = 4,
+		AaHairline = 8,
+		AaConvex = 16,
+		AaLinearizing = 32,
+		Pls = 64,
+		DistanceField = 128,
+		Tessellating = 256,
+		Default = 512,
+		All = 1023,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKRegionOperation,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKRegionOperation__SkiaSharp
+	{
+		Difference = 0,
+		Intersect = 1,
+		Union = 2,
+		XOR = 3,
+		ReverseDifference = 4,
+		Replace = 5,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKVertexMode,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756")]
+	public enum SKVertexMode__SkiaSharp
+	{
+		Triangles = 0,
+		TriangleStrip = 1,
+		TriangleFan = 2,
+	}
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.GRGlGetProcDelegateInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed" +
+		"756")]
+	public unsafe delegate global::System.IntPtr GRGlGetProcDelegateInternal__SkiaSharp(
+				global::System.IntPtr context, 
+				string name);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKImageRasterReleaseDelegateInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738" +
+		"eb9f132ed756")]
+	public unsafe delegate void SKImageRasterReleaseDelegateInternal__SkiaSharp(
+				global::System.IntPtr pixels, 
+				global::System.IntPtr context);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKImageTextureReleaseDelegateInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=073" +
+		"8eb9f132ed756")]
+	public unsafe delegate void SKImageTextureReleaseDelegateInternal__SkiaSharp(global::System.IntPtr context);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKDataReleaseDelegateInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public unsafe delegate void SKDataReleaseDelegateInternal__SkiaSharp(
+				global::System.IntPtr address, 
+				global::System.IntPtr context);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKBitmapReleaseDelegateInternal,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f1" +
+		"32ed756")]
+	public unsafe delegate void SKBitmapReleaseDelegateInternal__SkiaSharp(
+				global::System.IntPtr address, 
+				global::System.IntPtr context);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+read_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public unsafe delegate global::System.IntPtr SKManagedStream_read_delegate__SkiaSharp(
+				global::System.IntPtr managedStreamPtr, 
+				global::System.IntPtr buffer, 
+				global::System.IntPtr size);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+peek_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public unsafe delegate global::System.IntPtr SKManagedStream_peek_delegate__SkiaSharp(
+				global::System.IntPtr managedStreamPtr, 
+				global::System.IntPtr buffer, 
+				global::System.IntPtr size);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+isAtEnd_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f" +
+		"132ed756")]
+	public unsafe delegate bool SKManagedStream_isAtEnd_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+rewind_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f1" +
+		"32ed756")]
+	public unsafe delegate bool SKManagedStream_rewind_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+getPosition_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738" +
+		"eb9f132ed756")]
+	public unsafe delegate global::System.IntPtr SKManagedStream_getPosition_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+seek_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public unsafe delegate bool SKManagedStream_seek_delegate__SkiaSharp(
+				global::System.IntPtr managedStreamPtr, 
+				global::System.IntPtr position);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+move_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132" +
+		"ed756")]
+	public unsafe delegate bool SKManagedStream_move_delegate__SkiaSharp(
+				global::System.IntPtr managedStreamPtr, 
+				int offset);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+getLength_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb" +
+		"9f132ed756")]
+	public unsafe delegate global::System.IntPtr SKManagedStream_getLength_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+createNew_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb" +
+		"9f132ed756")]
+	public unsafe delegate global::System.IntPtr SKManagedStream_createNew_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedStream+destroy_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f" +
+		"132ed756")]
+	public unsafe delegate void SKManagedStream_destroy_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedWStream+write_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f1" +
+		"32ed756")]
+	public unsafe delegate bool SKManagedWStream_write_delegate__SkiaSharp(
+				global::System.IntPtr managedStreamPtr, 
+				global::System.IntPtr buffer, 
+				global::System.IntPtr size);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedWStream+flush_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f1" +
+		"32ed756")]
+	public unsafe delegate void SKManagedWStream_flush_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedWStream+bytesWritten_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=07" +
+		"38eb9f132ed756")]
+	public unsafe delegate global::System.IntPtr SKManagedWStream_bytesWritten_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+
+	// Unmanaged Function Pointer - Calling Convention CDecl
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.SKManagedWStream+destroy_delegate,SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9" +
+		"f132ed756")]
+	public unsafe delegate void SKManagedWStream_destroy_delegate__SkiaSharp(global::System.IntPtr managedStreamPtr);
+}
+
+namespace SkiaSharp_Views_UWP_Interop
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("SkiaSharp.Views.UWP.Interop.IBufferByteAccess,SkiaSharp.Views.UWP, Version=1.59.0.0, Culture=neutral, PublicKeyT" +
+		"oken=0738eb9f132ed756")]
+	public unsafe interface IBufferByteAccess__SkiaSharp_Views_UWP
+	{
+		long Buffer(out global::System.IntPtr value);
+	}
+}
+
 namespace System.Net.Security
 {
 	[global::System.Runtime.InteropServices.McgRedirectedType("System.Net.Security.SafeFreeContextBuffer_SECURITY,System.Net.Security, Version=4.1.1.0, Culture=neutral, Public" +
@@ -5480,6 +6459,35 @@ namespace Windows.Graphics.Display
 			return __retVal;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LogicalDpi")]
+		public float get_LogicalDpi()
+		{
+			float __retVal = global::Windows.Graphics.Display.IDisplayInformation__Impl.Stubs.get_LogicalDpi(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DpiChanged")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DpiChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.Graphics.Display.DisplayInformation, object> handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.Graphics.Display.IDisplayInformation__Impl.Stubs.add_DpiChanged(
+								this, 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DpiChanged")]
+		public void remove_DpiChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.Graphics.Display.IDisplayInformation__Impl.Stubs.remove_DpiChanged(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		public static global::Windows.Graphics.Display.DisplayInformation GetForCurrentView()
 		{
 			global::Windows.Graphics.Display.DisplayInformation retval;
@@ -5526,6 +6534,15 @@ namespace Windows.Graphics.Display
 
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ResolutionScale")]
 		global::Windows.Graphics.Display.ResolutionScale get_ResolutionScale();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "LogicalDpi")]
+		float get_LogicalDpi();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "DpiChanged")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_DpiChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.Graphics.Display.DisplayInformation, object> handler);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "DpiChanged")]
+		void remove_DpiChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
 	}
 
 	[global::System.Flags]
@@ -6642,19 +7659,6 @@ namespace Windows.Storage.Streams
 {
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IRandomAccessStreamReference
-	{
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStreamWithContentType> OpenReadAsync();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IRandomAccessStreamWithContentType : global::Windows.Storage.Streams.IRandomAccessStream, global::System.IDisposable, global::Windows.Storage.Streams.IInputStream, global::Windows.Storage.Streams.IOutputStream
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IRandomAccessStream : global::System.IDisposable, global::Windows.Storage.Streams.IInputStream, global::Windows.Storage.Streams.IOutputStream
 	{
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Size")]
@@ -6712,6 +7716,19 @@ namespace Windows.Storage.Streams
 		global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint> WriteAsync(global::Windows.Storage.Streams.IBuffer buffer);
 
 		global::Windows.Foundation.IAsyncOperation<bool> FlushAsync();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IRandomAccessStreamReference
+	{
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStreamWithContentType> OpenReadAsync();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IRandomAccessStreamWithContentType : global::Windows.Storage.Streams.IRandomAccessStream, global::System.IDisposable, global::Windows.Storage.Streams.IInputStream, global::Windows.Storage.Streams.IOutputStream
+	{
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -6953,6 +7970,57 @@ namespace Windows.System
 		GamepadRightThumbstickDown = 216,
 		GamepadRightThumbstickRight = 217,
 		GamepadRightThumbstickLeft = 218,
+	}
+}
+
+namespace Windows.System.Threading
+{
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ThreadPool : global::System.__ComObject
+	{
+		public static global::Windows.Foundation.IAsyncAction RunAsync(global::Windows.System.Threading.WorkItemHandler handler)
+		{
+			global::Windows.Foundation.IAsyncAction retval;
+			retval = __Factory_Windows_System_Threading__IThreadPoolStatics_RunAsync(
+								"Windows.System.Threading.ThreadPool", 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return retval;
+		}
+
+		static global::Windows.Foundation.IAsyncAction __Factory_Windows_System_Threading__IThreadPoolStatics_RunAsync(
+					string typeName, 
+					global::Windows.System.Threading.WorkItemHandler handler)
+		{
+			global::Windows.Foundation.IAsyncAction __pRetVal;
+			__pRetVal = global::Windows.System.Threading.IThreadPoolStatics__Impl.Stubs.RunAsync(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.System.Threading.IThreadPoolStatics).TypeHandle
+												), 
+								handler
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __pRetVal;
+		}
+
+		public ThreadPool(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe delegate void WorkItemHandler(global::Windows.Foundation.IAsyncAction operation);
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IThreadPoolStatics
+	{
+		global::Windows.Foundation.IAsyncAction RunAsync(global::Windows.System.Threading.WorkItemHandler handler);
 	}
 }
 
@@ -7485,6 +8553,14 @@ namespace Windows.UI.Input
 			return __retVal;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Position")]
+		public global::Windows.Foundation.Point get_Position()
+		{
+			global::Windows.Foundation.Point __retVal = global::Windows.UI.Input.IPointerPoint__Impl.Stubs.get_Position(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
 		public global::Windows.UI.Input.PointerPointProperties get_Properties()
 		{
@@ -7504,6 +8580,30 @@ namespace Windows.UI.Input
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class PointerPointProperties : global::System.__ComObject, global::Windows.UI.Input.IPointerPointProperties
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsLeftButtonPressed")]
+		public bool get_IsLeftButtonPressed()
+		{
+			bool __retVal = global::Windows.UI.Input.IPointerPointProperties__Impl.Stubs.get_IsLeftButtonPressed(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsRightButtonPressed")]
+		public bool get_IsRightButtonPressed()
+		{
+			bool __retVal = global::Windows.UI.Input.IPointerPointProperties__Impl.Stubs.get_IsRightButtonPressed(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsMiddleButtonPressed")]
+		public bool get_IsMiddleButtonPressed()
+		{
+			bool __retVal = global::Windows.UI.Input.IPointerPointProperties__Impl.Stubs.get_IsMiddleButtonPressed(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsXButton1Pressed")]
 		public bool get_IsXButton1Pressed()
 		{
@@ -7532,6 +8632,9 @@ namespace Windows.UI.Input
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PointerDevice")]
 		global::Windows.Devices.Input.PointerDevice get_PointerDevice();
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Position")]
+		global::Windows.Foundation.Point get_Position();
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
 		global::Windows.UI.Input.PointerPointProperties get_Properties();
 	}
@@ -7540,6 +8643,15 @@ namespace Windows.UI.Input
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IPointerPointProperties
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsLeftButtonPressed")]
+		bool get_IsLeftButtonPressed();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsRightButtonPressed")]
+		bool get_IsRightButtonPressed();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsMiddleButtonPressed")]
+		bool get_IsMiddleButtonPressed();
+
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsXButton1Pressed")]
 		bool get_IsXButton1Pressed();
 
@@ -9309,6 +10421,16 @@ namespace Windows.UI.Xaml
 								finalRect
 							);
 			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public virtual bool CapturePointer(global::Windows.UI.Xaml.Input.Pointer value)
+		{
+			bool __retVal = global::Windows.UI.Xaml.IUIElement__Impl.Stubs.CapturePointer(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
 		}
 
 		public virtual void AddHandler(
@@ -12451,6 +13573,8 @@ namespace Windows.UI.Xaml
 		void Measure(global::Windows.Foundation.Size availableSize);
 
 		void Arrange(global::Windows.Foundation.Rect finalRect);
+
+		bool CapturePointer(global::Windows.UI.Xaml.Input.Pointer value);
 
 		void AddHandler(
 					global::Windows.UI.Xaml.RoutedEvent routedEvent, 
@@ -25708,6 +26832,92 @@ namespace Windows.UI.Xaml.Controls
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.ISwapChainPanel))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe class SwapChainPanel : global::Windows.UI.Xaml.Controls.Grid, global::Windows.UI.Xaml.Controls.ISwapChainPanel
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public SwapChainPanel() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Controls__ISwapChainPanelFactory_CreateInstance("Windows.UI.Xaml.Controls.SwapChainPanel");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__ISwapChainPanelFactory_CreateInstance(string typeName)
+		{
+			global::System.IntPtr innerInspectable;
+			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
+			if (global::System.Runtime.InteropServices.McgMarshal.IsOfType(
+								this, 
+								typeof(global::Windows.UI.Xaml.Controls.SwapChainPanel).TypeHandle
+							))
+			{
+				global::System.IntPtr __pRetVal_NoAggregation;
+				__pRetVal_NoAggregation = global::Windows.UI.Xaml.Controls.ISwapChainPanelFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.ISwapChainPanelFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(innerInspectable);
+				global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal_NoAggregation);
+				return __pRetVal_NoAggregation;
+			}
+			else
+			{
+				outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
+				global::System.IntPtr __pRetVal_WithAggregation;
+				__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.ISwapChainPanelFactory__Impl.Stubs.CreateInstance(
+									global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+														typeName, 
+														typeof(global::Windows.UI.Xaml.Controls.ISwapChainPanelFactory).TypeHandle
+													), 
+									outerInspectable, 
+									out innerInspectable
+								);
+				global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
+				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
+				return innerInspectable;
+			}
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "CompositionScaleChanged")]
+		public virtual global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CompositionScaleChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.SwapChainPanel, object> value)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.UI.Xaml.Controls.ISwapChainPanel__Impl.Stubs.add_CompositionScaleChanged(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "CompositionScaleChanged")]
+		public virtual void remove_CompositionScaleChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.UI.Xaml.Controls.ISwapChainPanel__Impl.Stubs.remove_CompositionScaleChanged(
+								this, 
+								token
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public SwapChainPanel(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IProgressBar))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -30467,6 +31677,26 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISwapChainPanelFactory
+	{
+		global::System.IntPtr CreateInstance(
+					global::System.IntPtr outer, 
+					out global::System.IntPtr inner);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISwapChainPanel
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "CompositionScaleChanged")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_CompositionScaleChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.UI.Xaml.Controls.SwapChainPanel, object> value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "CompositionScaleChanged")]
+		void remove_CompositionScaleChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IProgressBarFactory
 	{
 		global::System.IntPtr CreateInstance(
@@ -34707,6 +35937,22 @@ namespace Windows.UI.Xaml.Input
 			return __retVal;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PointerDeviceType")]
+		public global::Windows.Devices.Input.PointerDeviceType get_PointerDeviceType()
+		{
+			global::Windows.Devices.Input.PointerDeviceType __retVal = global::Windows.UI.Xaml.Input.IPointer__Impl.Stubs.get_PointerDeviceType(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsInContact")]
+		public bool get_IsInContact()
+		{
+			bool __retVal = global::Windows.UI.Xaml.Input.IPointer__Impl.Stubs.get_IsInContact(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
 		public Pointer(global::System.IntPtr dummy)
 		{
 		}
@@ -35134,6 +36380,12 @@ namespace Windows.UI.Xaml.Input
 	{
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PointerId")]
 		uint get_PointerId();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PointerDeviceType")]
+		global::Windows.Devices.Input.PointerDeviceType get_PointerDeviceType();
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsInContact")]
+		bool get_IsInContact();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -35818,6 +37070,16 @@ namespace Windows.UI.Xaml.Media
 			return innerInspectable;
 		}
 
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Transform")]
+		public virtual void put_Transform(global::Windows.UI.Xaml.Media.Transform value)
+		{
+			global::Windows.UI.Xaml.Media.IBrush__Impl.Stubs.put_Transform(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		public Brush(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
@@ -36238,12 +37500,85 @@ namespace Windows.UI.Xaml.Media
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.IScaleTransform))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ScaleTransform : global::Windows.UI.Xaml.Media.Transform, global::Windows.UI.Xaml.Media.IScaleTransform
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public ScaleTransform() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.UI.Xaml.Media.ScaleTransform");
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleX")]
+		public void put_ScaleX(double value)
+		{
+			global::Windows.UI.Xaml.Media.IScaleTransform__Impl.Stubs.put_ScaleX(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleY")]
+		public void put_ScaleY(double value)
+		{
+			global::Windows.UI.Xaml.Media.IScaleTransform__Impl.Stubs.put_ScaleY(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public ScaleTransform(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.ITileBrush))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class TileBrush : global::Windows.UI.Xaml.Media.Brush, global::Windows.UI.Xaml.Media.ITileBrush
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AlignmentX")]
+		public virtual void put_AlignmentX(global::Windows.UI.Xaml.Media.AlignmentX value)
+		{
+			global::Windows.UI.Xaml.Media.ITileBrush__Impl.Stubs.put_AlignmentX(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AlignmentY")]
+		public virtual void put_AlignmentY(global::Windows.UI.Xaml.Media.AlignmentY value)
+		{
+			global::Windows.UI.Xaml.Media.ITileBrush__Impl.Stubs.put_AlignmentY(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Stretch")]
+		public virtual void put_Stretch(global::Windows.UI.Xaml.Media.Stretch value)
+		{
+			global::Windows.UI.Xaml.Media.ITileBrush__Impl.Stubs.put_Stretch(
+								this, 
+								value
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
 		public TileBrush(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
@@ -36426,49 +37761,6 @@ namespace Windows.UI.Xaml.Media
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.IScaleTransform))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ScaleTransform : global::Windows.UI.Xaml.Media.Transform, global::Windows.UI.Xaml.Media.IScaleTransform
-	{
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public ScaleTransform() : 
-				base(default(global::System.IntPtr))
-		{
-			global::System.IntPtr retval;
-			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Windows.UI.Xaml.Media.ScaleTransform");
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleX")]
-		public void put_ScaleX(double value)
-		{
-			global::Windows.UI.Xaml.Media.IScaleTransform__Impl.Stubs.put_ScaleX(
-								this, 
-								value
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleY")]
-		public void put_ScaleY(double value)
-		{
-			global::Windows.UI.Xaml.Media.IScaleTransform__Impl.Stubs.put_ScaleY(
-								this, 
-								value
-							);
-			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
-		}
-
-		public ScaleTransform(global::System.IntPtr dummy) : 
-				base(dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.IVisualTreeHelper))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -36634,6 +37926,8 @@ namespace Windows.UI.Xaml.Media
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IBrush
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Transform")]
+		void put_Transform(global::Windows.UI.Xaml.Media.Transform value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -36717,8 +38011,27 @@ namespace Windows.UI.Xaml.Media
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IScaleTransform
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleX")]
+		void put_ScaleX(double value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleY")]
+		void put_ScaleY(double value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ITileBrush
 	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AlignmentX")]
+		void put_AlignmentX(global::Windows.UI.Xaml.Media.AlignmentX value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AlignmentY")]
+		void put_AlignmentY(global::Windows.UI.Xaml.Media.AlignmentY value);
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Stretch")]
+		void put_Stretch(global::Windows.UI.Xaml.Media.Stretch value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -36772,17 +38085,6 @@ namespace Windows.UI.Xaml.Media
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IScaleTransform
-	{
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleX")]
-		void put_ScaleX(double value);
-
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ScaleY")]
-		void put_ScaleY(double value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IVisualTreeHelperStatics
 	{
 		global::Windows.UI.Xaml.DependencyObject GetChild(
@@ -36809,6 +38111,26 @@ namespace Windows.UI.Xaml.Media
 		Fill = 1,
 		Uniform = 2,
 		UniformToFill = 3,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum AlignmentX
+	{
+		Left = 0,
+		Center = 1,
+		Right = 2,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum AlignmentY
+	{
+		Top = 0,
+		Center = 1,
+		Bottom = 2,
 	}
 }
 
@@ -38319,6 +39641,68 @@ namespace Windows.UI.Xaml.Media.Imaging
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Imaging.IWriteableBitmap))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class WriteableBitmap : global::Windows.UI.Xaml.Media.Imaging.BitmapSource, global::Windows.UI.Xaml.Media.Imaging.IWriteableBitmap
+	{
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public WriteableBitmap(
+					int pixelWidth, 
+					int pixelHeight) : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Media_Imaging__IWriteableBitmapFactory_CreateInstanceWithDimensions(
+								"Windows.UI.Xaml.Media.Imaging.WriteableBitmap", 
+								pixelWidth, 
+								pixelHeight
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref retval);
+			this.__AttachAndRelease(retval);
+		}
+
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Media_Imaging__IWriteableBitmapFactory_CreateInstanceWithDimensions(
+					string typeName, 
+					int pixelWidth, 
+					int pixelHeight)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.UI.Xaml.Media.Imaging.IWriteableBitmapFactory__Impl.Stubs.CreateInstanceWithDimensions(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.UI.Xaml.Media.Imaging.IWriteableBitmapFactory).TypeHandle
+												), 
+								pixelWidth, 
+								pixelHeight
+							);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			global::__Interop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PixelBuffer")]
+		public global::Windows.Storage.Streams.IBuffer get_PixelBuffer()
+		{
+			global::Windows.Storage.Streams.IBuffer __retVal = global::Windows.UI.Xaml.Media.Imaging.IWriteableBitmap__Impl.Stubs.get_PixelBuffer(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+			return __retVal;
+		}
+
+		public void Invalidate()
+		{
+			global::Windows.UI.Xaml.Media.Imaging.IWriteableBitmap__Impl.Stubs.Invalidate(this);
+			global::System.Diagnostics.DebugAnnotations.PreviousCallContainsDebuggerStepInCode();
+		}
+
+		public WriteableBitmap(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Media.Imaging.IBitmapImage))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -38458,6 +39842,25 @@ namespace Windows.UI.Xaml.Media.Imaging
 		int get_PixelHeight();
 
 		global::Windows.Foundation.IAsyncAction SetSourceAsync(global::Windows.Storage.Streams.IRandomAccessStream streamSource);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IWriteableBitmapFactory
+	{
+		global::System.IntPtr CreateInstanceWithDimensions(
+					int pixelWidth, 
+					int pixelHeight);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IWriteableBitmap
+	{
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PixelBuffer")]
+		global::Windows.Storage.Streams.IBuffer get_PixelBuffer();
+
+		void Invalidate();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]

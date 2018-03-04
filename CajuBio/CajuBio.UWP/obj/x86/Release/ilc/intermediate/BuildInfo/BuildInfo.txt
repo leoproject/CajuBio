@@ -8,12 +8,19 @@ sg.exe          : 2.0.25710.01 built by: PROJECTNREL
 
 Framework:
 clrcompression.dll                                    : 4.6.25730.03 built by: dlab-DDVSOWINAGE038. 
+libEGL.dll                                            : 2.1.13.6fde4e24ab73
+libGLESv2.dll                                         : 2.1.13.6fde4e24ab73
+libSkiaSharp.dll                                      : 
+Microcharts.Forms.dll                                 : 1.0.6436.42762
 Microsoft.CSharp.dll                                  : 4.6.25730.03
 Microsoft.VisualBasic.dll                             : 4.6.25730.03
 Microsoft.Win32.Primitives.dll                        : 4.6.25730.03
 mscorlib.dll                                          : 4.6.25730.03
 netstandard.dll                                       : 4.6.25730.3
 Newtonsoft.Json.dll                                   : 11.0.1.21818
+SkiaSharp.dll                                         : 1.59.1.0
+SkiaSharp.Views.Forms.dll                             : 1.59.1.0
+SkiaSharp.Views.UWP.dll                               : 1.59.1.0
 System.AppContext.dll                                 : 4.6.25730.03
 System.Buffers.dll                                    : 4.6.25730.03
 System.Collections.Concurrent.dll                     : 4.6.25730.03

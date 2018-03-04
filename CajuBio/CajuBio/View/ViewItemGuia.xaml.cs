@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CajuBio.ViewModel;
 
 namespace CajuBio.View
 {
@@ -15,6 +16,7 @@ namespace CajuBio.View
 		public ViewItemGuia ()
 		{
 			InitializeComponent ();
+            BindingContext = new ViewModelItemGuia();
 		}
 	}
 }

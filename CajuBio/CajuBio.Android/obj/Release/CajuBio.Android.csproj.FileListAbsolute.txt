@@ -41,6 +41,7 @@ C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Release\CajuBio.Droid.View.ViewEditarUsuario.xaml.g.cs
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\bin\Release\CajuBio.Android.dll
 bin\Release\FormsViewGroup.dll.mdb
 bin\Release\Xamarin.Forms.Core.dll.mdb

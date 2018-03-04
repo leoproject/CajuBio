@@ -436,3 +436,17 @@ C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\Assets\Wide310x150Logo.scale-200.png
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\Assets\Wide310x150Logo.scale-400.png
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc.CajuBio.UWP.rsp
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\Microcharts.Forms.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\libEGL.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\libGLESv2.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\libSkiaSharp.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\SkiaSharp.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\SkiaSharp.Views.UWP.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Release\SkiaSharp.Views.Forms.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\Microcharts.Forms.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\SkiaSharp.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\SkiaSharp.Views.UWP.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\SkiaSharp.Views.Forms.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\libEGL.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\libGLESv2.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\libSkiaSharp.dll

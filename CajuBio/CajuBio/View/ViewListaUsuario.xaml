@@ -1,34 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CajuBio.View.ViewListaUsuario">
-     
+             x:Class="CajuBio.View.ViewListaUsuario"
+             Title="Administrar Usuários">
+
     <StackLayout BackgroundColor="#024A59">
         <!--Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" /-->
-        
-        <StackLayout Padding="10,10,0,0">
-            
-            <Entry x:Name="txtNome" PlaceholderColor="White" Placeholder="Nome do Colaborador" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" TextColor="White"/>
-            <Button HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" HeightRequest="60" Text="Buscar"  TextColor="#E6E7E9" BackgroundColor="#082140"/>
+        <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
+
+        <StackLayout Padding="5,5,0,0" BackgroundColor="#024A59">
+            <Entry x:Name="txtNome" PlaceholderColor="#c9cacc" Placeholder="Nome do Colaborador" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" TextColor="White"/>
+            <Button HorizontalOptions="FillAndExpand" Command="{Binding buscarCommand}" VerticalOptions="StartAndExpand" HeightRequest="60" Text="Buscar"  TextColor="#082140" BackgroundColor="#FFFFFF"/>
         </StackLayout>
         <!-- Menu de Rastreamento do caminho-->
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Gestão da Informação >" FontSize="Medium" TextColor="#c9cacc" />
-            <Label Text="Administrar os Usuários>" FontSize="Medium" TextColor="#024A59" />
+        <StackLayout Orientation="Horizontal" BackgroundColor="#E6E7E9">
+            <Label Text="Gestão da Informação >" FontSize="Small" TextColor="#c9cacc" />
+            <Label Text="Administrar os Usuários>" FontSize="Small" TextColor="#024A59" />
         </StackLayout>
-        
-        
-        <StackLayout BackgroundColor="White">
+
+
+        <StackLayout BackgroundColor="#FFFFFF">
             <ListView ItemsSource="{Binding Usuarios}" HasUnevenRows="True" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Command="{Binding atulizarCommand}" CommandParameter="{Binding .}" Text="Editar"/>
+                                <MenuItem Command="{Binding deletarComamand}" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="False"/>
+                            </ViewCell.ContextActions>
                             <StackLayout Orientation="Vertical" Padding="5,5">
-                                <Label Text="{Binding nome}" TextColor="#082140" FontSize="Medium"/>
-                                <Label Text="{Binding usuario_formacao}" TextColor="#F2C778" FontSize="Small"/>
+                                <Label Text="{Binding nome}" TextColor="#FFFFFF" FontSize="Medium"/>
+                                <Label Text="{Binding usuario_formacao}" TextColor="#c9cacc" FontSize="Small"/>
                                 <StackLayout Orientation="Horizontal">
                                     <Button Text="Detalhes" TextColor="#FFFFFF"/>
-                                    <Button Text="Editar" BackgroundColor="#024A59" TextColor="White" Clicked="OnViewUsuario"/>
+                                    <Button Text="Editar" BackgroundColor="#024A59" TextColor="White" />
                                     <Button Text="Deletar" BackgroundColor="#BF2B2B" TextColor="White"/>
                                 </StackLayout>
                             </StackLayout>

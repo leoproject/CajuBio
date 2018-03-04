@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="CajuBio.View.ViewIndicadorAcesso">
 
         <StackLayout>
             <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
 
-           <StackLayout Orientation="Horizontal">
-            <Label Text="Gestão da Informação >" FontSize="Medium" TextColor="#c9cacc" />
-              <Label Text="Gerar Relatório de Acesso>" FontSize="Medium" TextColor="#024A59" />
-          </StackLayout>
-
+               <forms:ChartView x:Name="Grafico" HeightRequest="150" />
     </StackLayout>
+
+   
   
 </ContentPage>

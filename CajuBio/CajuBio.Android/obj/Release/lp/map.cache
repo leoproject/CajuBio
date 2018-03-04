@@ -26,3 +26,7 @@ System.Net.Http.Primitives
 netstandard
 System.ComponentModel
 System.Reflection.Extensions
+Microcharts.Forms
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms

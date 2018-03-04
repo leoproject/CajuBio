@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CajuBio.View.ViewMainMenu">
+    <StackLayout>
+        <Image Source="c1.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
+        <Button 
+                Text="Consultar Guias"
+                HorizontalOptions="FillAndExpand"
+                Margin="40"
+                HeightRequest="100"
+                BackgroundColor="#124972"
+                Clicked="OnViewGuia"
+                TextColor="#E6E7E9"/>
+
+        <Button
+                Text="Gestão da Informação"
+                HorizontalOptions="FillAndExpand"
+                Clicked="OnViewGestaoMenu"
+                Margin="40"
+                HeightRequest="100"
+                BackgroundColor="#0B6887"
+                TextColor="#E6E7E9"/>
+
+    </StackLayout>
+</ContentPage>

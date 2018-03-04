@@ -1,0 +1,3 @@
+CajuBio.UWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  CajuBio.UWP.App.xaml
+  CajuBio.UWP.MainPage.xaml

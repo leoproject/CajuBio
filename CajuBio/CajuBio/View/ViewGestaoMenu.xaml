@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CajuBio.View.ViewGestaoMenu"       
+             Title="Gestão da Informação">
+    <StackLayout>
+
+        <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
+
+        <Label Text="Gestão da Informação >" FontSize="Medium" TextColor="#E6E7E9" HorizontalOptions="Center"/>
+
+
+        <Button
+                Text=" Gerar Relatório de Acesso"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="100"
+                Command="{Binding gerarRelatorio}"
+                BackgroundColor="#18AEC1"
+                TextColor="#E6E7E9"/>
+
+
+        <Button  
+            Text="Administrar os Usuários"
+             HorizontalOptions="FillAndExpand"
+             HeightRequest="100"
+             Command="{Binding administrarUsuarios}"
+             BackgroundColor="#0B6887"
+             TextColor="#E6E7E9"/>
+
+        <Button 
+                Text="Administrar os Guias"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="100"
+                Command="{Binding administrarGuias}"
+                BackgroundColor="#024A59"
+                TextColor="#FFFFFF"/>
+
+
+
+    </StackLayout>
+</ContentPage>

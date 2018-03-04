@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CajuBio.View.ViewLogin">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <Image Source="logo2.png" Aspect="AspectFill" VerticalOptions="Center"
+               HorizontalOptions="Center" HeightRequest="160" Margin="40" >
+        </Image>
+        <Entry Placeholder="Digite seu E-mail" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center"/>
+        <Entry  IsPassword="True" Placeholder="Digite sua Senha" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center"/>
+        <Button 
+                Text="Acessar"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="80"
+                Command="{Binding efetuarAcesso}"
+                BackgroundColor="#082140"
+                TextColor="#E6E7E9"
+        />
+
+    </StackLayout>
+</ContentPage>

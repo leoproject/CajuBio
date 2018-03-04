@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{4EECC5DC-3DC7-42E1-B85A-7E266C26272E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CajuBio</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Acesso.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ExperienciaUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\FormacaoUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Guia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ItemGuia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SetorUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TipoItemGuia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TipoUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\VinculoUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Requester\FacadeRequester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Requester\Requester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelAbertura.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelGestaoMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelGuia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewAbertura.xaml.cs">
+      <DependentUpon>ViewAbertura.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewGestaoMenu.xaml.cs">
+      <DependentUpon>ViewGestaoMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewGuia.xaml.cs">
+      <DependentUpon>ViewGuia.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewIndicadorAcesso.xaml.cs">
+      <DependentUpon>ViewIndicadorAcesso.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewItemGuia.xaml.cs">
+      <DependentUpon>ViewItemGuia.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewListaUsuario.xaml.cs">
+      <DependentUpon>ViewListaUsuario.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewLogin.xaml.cs">
+      <DependentUpon>ViewLogin.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewMainMenu.xaml.cs">
+      <DependentUpon>ViewMainMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ViewUsuario.xaml.cs">
+      <DependentUpon>ViewUsuario.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewGuia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewItemGuia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewGestaoMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewIndicadorAcesso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewListaUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewAbertura.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ViewLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

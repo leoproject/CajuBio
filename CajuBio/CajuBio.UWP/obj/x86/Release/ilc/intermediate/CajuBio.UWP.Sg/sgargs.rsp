@@ -1,0 +1,12 @@
+/ref:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\2.0.0\tools\SharedLibrary\ret\AnalysisILToc"
+/ref:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\Users\Leonardo\.nuget\packages\microsoft.net.native.compiler\2.0.0\tools\x86\ilc\lib\Private\\"
+/ref:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in"
+/ref:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\Leonardo\.nuget\packages\microsoft.net.native.compiler\2.0.0\tools\csc"
+/out:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\intermediate\CajuBio.UWP.Sg"
+"@C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\obj\x86\Release\ilc\intermediate\CajuBio.UWP.Sg\ComputedSerializationInput.txt"

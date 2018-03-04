@@ -26,3 +26,7 @@ Newtonsoft.Json
 System.Net.Http.Extensions
 System.Net.Http.Primitives
 netstandard
+Microcharts.Forms
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms

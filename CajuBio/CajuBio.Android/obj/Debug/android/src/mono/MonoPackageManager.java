@@ -108,7 +108,11 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "CajuBio.Android.dll" comes first in this list. */
 		"CajuBio.Android.dll",
 		"FormsViewGroup.dll",
+		"Microcharts.Forms.dll",
 		"Newtonsoft.Json.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",

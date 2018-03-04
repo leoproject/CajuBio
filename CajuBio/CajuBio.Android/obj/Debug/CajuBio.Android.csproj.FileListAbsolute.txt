@@ -41,7 +41,7 @@ C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\CajuBio.Droid.View.ViewUsuario.xaml.g.cs
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\res\drawable\logo2.png
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\CajuBio.Droid.View.ViewAbertura.xaml.g.cs
-C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\bin\Debug\CajuBio.Android.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\CajuBio.Droid.View.ViewEditarUsuario.xaml.g.cs
 bin\Debug\FormsViewGroup.dll.mdb
 bin\Debug\Xamarin.Forms.Core.dll.mdb
 bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb

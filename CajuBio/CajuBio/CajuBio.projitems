@@ -31,7 +31,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\VinculoUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Requester\FacadeRequester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Requester\Requester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Requester\UsuarioRequester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelAbertura.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelEditarUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelGestaoMenu.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelGuia.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelIndicadorAcesso.cs" />

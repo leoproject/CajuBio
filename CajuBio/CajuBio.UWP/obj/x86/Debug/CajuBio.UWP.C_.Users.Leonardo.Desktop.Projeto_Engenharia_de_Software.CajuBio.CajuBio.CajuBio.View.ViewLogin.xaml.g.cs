@@ -13,11 +13,11 @@ namespace CajuBio.View {
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Leonardo\\Desktop\\Projeto Engenharia de Software\\CajuBio\\CajuBio\\CajuBio\\" +
         "View\\ViewLogin.xaml")]
-    public partial class ViewLogar : global::Xamarin.Forms.ContentPage {
+    public partial class ViewLogin : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ViewLogar));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ViewLogin));
         }
     }
 }

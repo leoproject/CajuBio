@@ -4,6 +4,9 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 using CajuBio.View;
+using CajuBio.Requester;
+using System.Threading.Tasks;
+using CajuBio.Model;
 
 namespace CajuBio.ViewModel
 {
@@ -19,9 +22,12 @@ namespace CajuBio.ViewModel
 
         }
 
-        void efetuarAcesso()
+       async void efetuarAcesso()
         {
+            UsuarioRequester requester = new UsuarioRequester();
+            Usuario usuario = request.readAsync("jecrjunior@dcomp.ufs.br", "");
             Navigation.PushAsync(new ViewMainMenu());
+
         }
     }
 }

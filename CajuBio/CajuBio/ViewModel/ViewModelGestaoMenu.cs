@@ -30,7 +30,7 @@ namespace CajuBio.ViewModel
 
         void administrarUsuarios()
         {
-            Navigation.PushAsync(new ViewUsuario());
+            Navigation.PushAsync(new ViewListaUsuario());
         }
 
         void administrarGuias()

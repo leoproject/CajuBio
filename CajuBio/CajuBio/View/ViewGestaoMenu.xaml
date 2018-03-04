@@ -23,7 +23,7 @@
             Text="Administrar os Usuários"
              HorizontalOptions="FillAndExpand"
              HeightRequest="100"
-             Command="{Binding administrarUsuarios}"
+             Command="{Binding administrarUsuariosCommand}"
              BackgroundColor="#0B6887"
              TextColor="#E6E7E9"/>
 
@@ -31,7 +31,7 @@
                 Text="Administrar os Guias"
                 HorizontalOptions="FillAndExpand"
                 HeightRequest="100"
-                Command="{Binding administrarGuias}"
+                Command="{Binding administrarGuiasCommand}"
                 BackgroundColor="#024A59"
                 TextColor="#FFFFFF"/>
 

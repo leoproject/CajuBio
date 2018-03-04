@@ -10,13 +10,13 @@
                 Margin="40"
                 HeightRequest="100"
                 BackgroundColor="#124972"
-                Clicked="OnViewGuia"
+                Command="consultarGuiasCommand"
                 TextColor="#E6E7E9"/>
 
         <Button
                 Text="Gestão da Informação"
                 HorizontalOptions="FillAndExpand"
-                Clicked="OnViewGestaoMenu"
+                Command="gestaoInformacaoComamnd"
                 Margin="40"
                 HeightRequest="100"
                 BackgroundColor="#0B6887"

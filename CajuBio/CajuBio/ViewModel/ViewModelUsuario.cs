@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CajuBio.ViewModel
 {
-    class ViewModelUsuario
+    public class ViewModelUsuario
     {
     }
 }

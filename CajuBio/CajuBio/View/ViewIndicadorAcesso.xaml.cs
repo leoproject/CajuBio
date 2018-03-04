@@ -7,6 +7,7 @@ using SkiaSharp;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CajuBio.ViewModel;
 
 namespace CajuBio.View
 {
@@ -15,7 +16,12 @@ namespace CajuBio.View
 	{
 		public ViewIndicadorAcesso ()
 		{
-            Grafico.Chart = new Microcharts.BarChart() { Entries = entries };
+
+            InitializeComponent();
+            /*BindingContext = new ViewModelGestaoMenu();
+            ((ViewModelGestaoMenu)BindingContext).Navigation = this.Navigation;*/
+
+            Grafico.Chart = new Microcharts.DonutChart() { Entries = entries };
         }
         List<Microcharts.Entry> entries = new List<Microcharts.Entry>
         {

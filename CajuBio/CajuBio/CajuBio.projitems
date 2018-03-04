@@ -34,6 +34,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelAbertura.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelGestaoMenu.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelGuia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelIndicadorAcesso.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLogin.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\ViewAbertura.xaml.cs">

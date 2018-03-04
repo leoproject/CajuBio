@@ -14,7 +14,7 @@
                 Text=" Gerar Relatório de Acesso"
                 HorizontalOptions="FillAndExpand"
                 HeightRequest="100"
-                Command="{Binding gerarRelatorio}"
+                Command="{Binding gerarRelatorioCommand}"
                 BackgroundColor="#18AEC1"
                 TextColor="#E6E7E9"/>
 

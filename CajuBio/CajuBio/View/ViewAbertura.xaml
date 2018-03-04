@@ -22,7 +22,7 @@
                 HeightRequest="80"
                 BackgroundColor="#BF2B2B"
                 TextColor="#E6E7E9" 
-                Command="{Binding efetuarCadastroUsuario}"/>
+                Command="{Binding efetuarCadastroUsuarioCommand}"/>
 
 
         </StackLayout>

@@ -7,7 +7,7 @@
         <StackLayout>
             <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
 
-               <forms:ChartView x:Name="Grafico" HeightRequest="150" />
+               <forms:ChartView x:Name="Grafico" HeightRequest="150"  />
     </StackLayout>
 
    

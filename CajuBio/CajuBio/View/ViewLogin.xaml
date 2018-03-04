@@ -13,7 +13,7 @@
                 Text="Acessar"
                 HorizontalOptions="FillAndExpand"
                 HeightRequest="80"
-                Command="{Binding efetuarAcesso}"
+                Command="{Binding efetuarAcessoCommand}"
                 BackgroundColor="#082140"
                 TextColor="#E6E7E9"
         />

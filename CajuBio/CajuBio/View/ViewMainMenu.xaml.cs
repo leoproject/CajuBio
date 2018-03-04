@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CajuBio.ViewModel;
 
 namespace CajuBio.View
 {
@@ -15,17 +16,10 @@ namespace CajuBio.View
 		public ViewMainMenu ()
 		{
 			InitializeComponent ();
-		}
-
-        void OnViewGuia()
-        {
-            Navigation.PushAsync(new ViewGuia());
+            BindingContext = new ViewModelMainMenu();
+            ((ViewModelMainMenu)BindingContext).Navigation = this.Navigation;
         }
-
-        void OnViewGestaoMenu()
-        {
-            Navigation.PushAsync(new ViewGestaoMenu());
-        }
+        
 
     }
 }

@@ -22,10 +22,10 @@ namespace CajuBio.ViewModel
 
         }
 
-       async void efetuarAcesso()
+        void efetuarAcesso()
         {
-            UsuarioRequester requester = new UsuarioRequester();
-            Usuario usuario = request.readAsync("jecrjunior@dcomp.ufs.br", "");
+          /* UsuarioRequester requester = new UsuarioRequester();
+            Usuario usuario = requester.read("jecrjunior@dcomp.ufs.br", "");*/
             Navigation.PushAsync(new ViewMainMenu());
 
         }

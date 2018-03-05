@@ -28,6 +28,18 @@
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\CajuBio.UWP.exe">
       <PackagePath>entrypoint\CajuBio.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microcharts.forms\0.6.2\lib\portable-net45+win8+wpa81+wp8\Microcharts.Forms.dll">
+      <PackagePath>Microcharts.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microsoft.net.http\2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microsoft.net.http\2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\newtonsoft.json\11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
@@ -520,6 +532,24 @@
     <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\runtimes\win10-x86\nativeassets\uap10.0\libEGL.dll">
+      <PackagePath>libEGL.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\runtimes\win10-x86\nativeassets\uap10.0\libGLESv2.dll">
+      <PackagePath>libGLESv2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\runtimes\win10-x86\nativeassets\uap10.0\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\lib\uap10.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp.views\1.59.1\lib\uap10.0\SkiaSharp.Views.UWP.dll">
+      <PackagePath>SkiaSharp.Views.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp.views.forms\1.59.1\lib\uap10.0\SkiaSharp.Views.Forms.dll">
+      <PackagePath>SkiaSharp.Views.Forms.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\xamarin.forms\2.5.0.122203\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
     </AppxPackagedFile>
@@ -541,6 +571,9 @@
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\Assets\logo2.png">
+      <PackagePath>Assets\logo2.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\c1.png">
       <PackagePath>c1.png</PackagePath>
     </AppxPackagedFile>
@@ -549,6 +582,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\logo.png">
       <PackagePath>logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\logo2.png">
+      <PackagePath>logo2.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>

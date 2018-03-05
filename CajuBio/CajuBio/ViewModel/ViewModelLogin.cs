@@ -10,10 +10,25 @@ using CajuBio.Model;
 
 namespace CajuBio.ViewModel
 {
-   public class ViewModelLogin
+   public class ViewModelLogin:NotificaBase
     {
         public INavigation Navigation { get; set; }
         public ICommand efetuarAcessoCommand { get; set; }
+
+        // Dados inseridos na ViewLogin
+        public string email { get; set; }
+        public string senha { get; set; }
+        private string _result;
+        public string RESULTADO
+        {
+            get { return _result; }
+            set
+            {
+                _result = value;
+                Notificar();
+            }
+        }
+
 
         public ViewModelLogin()
         {
@@ -24,9 +39,12 @@ namespace CajuBio.ViewModel
 
         void efetuarAcesso()
         {
-          /* UsuarioRequester requester = new UsuarioRequester();
-            Usuario usuario = requester.read("jecrjunior@dcomp.ufs.br", "");*/
-            Navigation.PushAsync(new ViewMainMenu());
+            UsuarioRequester requester = new UsuarioRequester();
+            
+            string usuario = requester.read("jecrjunior@dcomp.ufs.br", senha);
+            RESULTADO = usuario;
+
+            //Navigation.PushAsync(new ViewMainMenu());
 
         }
     }

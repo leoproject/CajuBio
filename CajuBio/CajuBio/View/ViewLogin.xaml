@@ -8,8 +8,9 @@
         <Image Source="logo2.png" Aspect="AspectFill" VerticalOptions="Center"
                HorizontalOptions="Center" HeightRequest="160" Margin="40" >
         </Image>
-        <Entry Placeholder="Digite seu E-mail" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center"/>
-        <Entry  IsPassword="True" Placeholder="Digite sua Senha" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center"/>
+        <Entry Placeholder="Digite seu E-mail" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center" Text="{Binding email}" />
+        <Entry  IsPassword="True" Placeholder="Digite sua Senha" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center" Text="{Binding senha}"/>
+        <Label Text="{Binding RESULTADO}" TextColor="#082140" FontSize="Medium"/>
         <Button 
                 Text="Acessar"
                 HorizontalOptions="FillAndExpand"
@@ -18,6 +19,8 @@
                 BackgroundColor="#082140"
                 TextColor="#E6E7E9"
         />
+
+        
 
     </StackLayout>
 </ContentPage>

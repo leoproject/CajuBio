@@ -2,6 +2,7 @@ C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\FormsViewGroup.dll
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\Microcharts.Forms.dll
+C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\mscorlib.dll
 C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.Android\obj\Debug\android\assets\Newtonsoft.Json.dll

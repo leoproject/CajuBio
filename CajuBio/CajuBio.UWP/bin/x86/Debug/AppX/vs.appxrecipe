@@ -31,13 +31,29 @@
     <AppXManifest Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-02T19:08:55.015</Modified>
+      <Modified>2018-03-05T07:06:05.576</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\CajuBio.UWP.exe">
       <PackagePath>entrypoint\CajuBio.UWP.exe</PackagePath>
-      <Modified>2018-03-02T19:08:37.961</Modified>
+      <Modified>2018-03-05T07:05:51.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microcharts.forms\0.6.2\lib\portable-net45+win8+wpa81+wp8\Microcharts.Forms.dll">
+      <PackagePath>Microcharts.Forms.dll</PackagePath>
+      <Modified>2017-08-16T02:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microsoft.net.http\2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2015-02-19T23:10:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microsoft.net.http\2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2015-02-19T23:10:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\newtonsoft.json\11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2018-02-18T12:44:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -695,6 +711,30 @@
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2017-09-30T23:26:12.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\runtimes\win10-x86\nativeassets\uap10.0\libEGL.dll">
+      <PackagePath>libEGL.dll</PackagePath>
+      <Modified>2017-07-17T20:14:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\runtimes\win10-x86\nativeassets\uap10.0\libGLESv2.dll">
+      <PackagePath>libGLESv2.dll</PackagePath>
+      <Modified>2017-07-17T20:14:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\runtimes\win10-x86\nativeassets\uap10.0\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2017-07-17T20:14:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp\1.59.1\lib\uap10.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2017-07-17T20:14:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp.views\1.59.1\lib\uap10.0\SkiaSharp.Views.UWP.dll">
+      <PackagePath>SkiaSharp.Views.UWP.dll</PackagePath>
+      <Modified>2017-07-17T20:14:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\skiasharp.views.forms\1.59.1\lib\uap10.0\SkiaSharp.Views.Forms.dll">
+      <PackagePath>SkiaSharp.Views.Forms.dll</PackagePath>
+      <Modified>2017-07-17T20:14:46.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\xamarin.forms\2.5.0.122203\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
       <Modified>2017-12-15T15:22:58.000</Modified>
@@ -723,6 +763,10 @@
       <PackagePath>Assets\logo.png</PackagePath>
       <Modified>2018-03-02T18:24:35.805</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\Assets\logo2.png">
+      <PackagePath>Assets\logo2.png</PackagePath>
+      <Modified>2018-03-03T00:46:07.626</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\c1.png">
       <PackagePath>c1.png</PackagePath>
       <Modified>2018-03-02T18:29:38.814</Modified>
@@ -734,6 +778,10 @@
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\logo.png">
       <PackagePath>logo.png</PackagePath>
       <Modified>2018-03-02T18:24:17.342</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\logo2.png">
+      <PackagePath>logo2.png</PackagePath>
+      <Modified>2018-03-03T00:45:47.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
@@ -904,11 +952,11 @@
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-02T19:08:48.585</Modified>
+      <Modified>2018-03-05T07:05:59.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\Core\CajuBio.UWP.exe">
       <PackagePath>CajuBio.UWP.exe</PackagePath>
-      <Modified>2018-03-02T19:08:55.000</Modified>
+      <Modified>2018-03-05T07:06:05.564</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

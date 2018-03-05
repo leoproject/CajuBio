@@ -7,6 +7,7 @@ Assets\LockScreenLogo.scale-150.png
 Assets\LockScreenLogo.scale-200.png
 Assets\LockScreenLogo.scale-400.png
 Assets\logo.png
+Assets\logo2.png
 Assets\SplashScreen.scale-100.png
 Assets\SplashScreen.scale-125.png
 Assets\SplashScreen.scale-150.png
@@ -37,4 +38,5 @@ CajuBio.UWP.xr.xml
 c1.png
 c2.png
 logo.png
+logo2.png
 Properties\Default.rd.xml

@@ -9,6 +9,7 @@ namespace CajuBio.Requester
 {
     public abstract class Requester<IModel >
     {
+        protected static string server = "192.168.0.12";
 
         protected dynamic request(string uri)
         {

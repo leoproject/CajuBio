@@ -39,11 +39,20 @@ namespace CajuBio.ViewModel
 
         void efetuarAcesso()
         {
-            UsuarioRequester requester = new UsuarioRequester();
-            
-            string usuario = requester.read("jecrjunior@dcomp.ufs.br", senha);
-            RESULTADO = usuario;
-
+            Usuario usuario = FacadeRequester.Instance.readUsuario(email, senha);
+             
+            if ( usuario is null)
+            {
+                //Usuario Inválido
+            } else 
+            if (usuario.tipo == 1)
+            {
+                Navigation.PushAsync(new ViewMainMenu()); 
+            }
+            else
+            {
+                Navigation.PushAsync(new ViewGuia());
+            }
             //Navigation.PushAsync(new ViewMainMenu());
 
         }

@@ -7,9 +7,36 @@ namespace CajuBio.Requester
 {
     public class FacadeRequester
     {
-        public Usuario requestUsuarioLogin(string email, string senha)
+        private static FacadeRequester instance;
+        private FacadeRequester() { }
+        public static FacadeRequester Instance
         {
-            return new Usuario();
+            get
+            {
+                if (FacadeRequester.instance is null)
+                {
+                    FacadeRequester.instance = new FacadeRequester();
+                }
+                return FacadeRequester.instance;
+            }
+        }
+
+        public Usuario readUsuario(string email, string senha)
+        {
+            UsuarioRequester requester = new UsuarioRequester();
+            return requester.read(email, senha);
+        }
+
+        public Usuario readUsuario(int id)
+        {
+            UsuarioRequester requester = new UsuarioRequester();
+            return requester.read(id);
+        }
+
+        public List<Usuario> readAllUsuario()
+        {
+            UsuarioRequester requester = new UsuarioRequester();
+            return requester.readAll();
         }
     }
 }

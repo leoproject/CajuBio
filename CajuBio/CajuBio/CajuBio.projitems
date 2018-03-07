@@ -29,8 +29,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\TipoUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Usuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\VinculoUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Requester\AcessoRequester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Requester\FacadeRequester.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Requester\HttpInstance.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Requester\GuiaRequester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Requester\ItemGuiaRequester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Requester\Requester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Requester\UsuarioRequester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NotificaBase.cs" />

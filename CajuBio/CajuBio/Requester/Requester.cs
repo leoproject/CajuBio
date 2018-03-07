@@ -2,36 +2,33 @@
 using System.Collections.Generic;
 using System.Text;
 using CajuBio;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace CajuBio.Requester
 {
     public abstract class Requester<IModel >
     {
-        public Boolean create(IModel model)
+
+        protected dynamic request(string uri)
         {
-            return false;
+            System.Net.Http.HttpClient http = new HttpClient();
+            string json = http.GetStringAsync(uri).GetAwaiter().GetResult();
+            return JsonConvert.DeserializeObject<dynamic>(json);
         }
 
-        public Boolean update(IModel model)
-        {
-            return false;
-        }
+        public abstract Boolean create(IModel model);
 
-        public Boolean delete(IModel model)
-        {
-            return false;
-        }
+        public abstract Boolean update(IModel model);
 
-        public IModel read(int id)
-        {
-            return default(IModel);
-        }
+        public abstract Boolean delete(IModel model);
 
-        public List<IModel> readAll()
-        {
-            return null;
-        }
+        public abstract IModel read(int id);
 
+        public abstract List<IModel> readAll();
 
+        protected abstract IModel Fill(dynamic json);
+
+        protected abstract dynamic Serialize(IModel model);
     }
 }

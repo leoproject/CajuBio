@@ -13,7 +13,7 @@ namespace CajuBio.Requester
 
         protected dynamic request(string uri)
         {
-            System.Net.Http.HttpClient http = new HttpClient();
+            System.Net.Http.HttpClient http = new System.Net.Http.HttpClient();
             string json = http.GetStringAsync(uri).GetAwaiter().GetResult();
             return JsonConvert.DeserializeObject<dynamic>(json);
         }

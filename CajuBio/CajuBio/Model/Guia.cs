@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CajuBio.Model
 {
-    class Guia
+    public class Guia
     {
         public int id { get; set; }
         public string titulo { get; set; }

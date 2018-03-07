@@ -20,5 +20,7 @@ namespace CajuBio.View
             ((ViewModelListaUsuario)BindingContext).Navigation = this.Navigation;
         }
 
+       
+
     }
 }

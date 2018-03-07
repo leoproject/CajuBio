@@ -33,8 +33,6 @@ namespace CajuBio.ViewModel
         public ViewModelLogin()
         {
             efetuarAcessoCommand = new Command(efetuarAcesso);
-          
-
         }
 
         void efetuarAcesso()
@@ -51,7 +49,7 @@ namespace CajuBio.ViewModel
             }
             else
             {
-                Navigation.PushAsync(new ViewGuia());
+                Navigation.PushAsync(new ViewGuia(0));
             }
             //Navigation.PushAsync(new ViewMainMenu());
 

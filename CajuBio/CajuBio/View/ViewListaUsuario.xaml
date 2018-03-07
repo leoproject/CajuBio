@@ -21,17 +21,17 @@
 
 
         <StackLayout BackgroundColor="#FFFFFF">
-            <ListView ItemsSource="{Binding Usuarios, Mode=TwoWay}" HasUnevenRows="True" >
-                <ListView.ItemTemplate>
+            <ListView ItemsSource="{Binding Usuarios, Mode=TwoWay}" HasUnevenRows="True"  >
+                <ListView.ItemTemplate >
                     <DataTemplate>
                         <ViewCell>
-                            <ViewCell.ContextActions>
+                            <ViewCell.ContextActions >
                                 <MenuItem Command="{Binding atulizarCommand}" CommandParameter="{Binding .}" Text="Editar"/>
                                 <MenuItem Command="{Binding deletarComamand}" CommandParameter="{Binding .}" Text="Deletar" IsDestructive="False"/>
                             </ViewCell.ContextActions>
                             <StackLayout Orientation="Vertical" Padding="5,5">
-                                <Label Text="{Binding nome}" TextColor="#FFFFFF" FontSize="Medium"/>
-                                <Label Text="{Binding email}" TextColor="#c9cacc" FontSize="Small"/>
+                                <Label Text="{Binding nome}" TextColor="#082140" FontSize="Medium"/>
+                                <Label Text="{Binding email}" TextColor="#C9CACC" FontSize="Small"/>
                                 <StackLayout Orientation="Horizontal">
                                     <Button Text="Detalhes" TextColor="#FFFFFF"/>
                                     <Button Text="Editar" BackgroundColor="#024A59" TextColor="White" />

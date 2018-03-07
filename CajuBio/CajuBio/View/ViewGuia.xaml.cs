@@ -19,5 +19,12 @@ namespace CajuBio.View
             BindingContext = new ViewModelGuia();
             ((ViewModelGuia)BindingContext).Navigation = this.Navigation;
         }
-	}
+
+        public ViewGuia(int idPai)
+        {
+            InitializeComponent();
+            BindingContext = new ViewModelGuia(idPai);
+            ((ViewModelGuia)BindingContext).Navigation = this.Navigation;
+        }
+    }
 }

@@ -13,7 +13,7 @@
            </StackLayout>
 
 
-        <forms:ChartView x:Name="Grafico" HeightRequest="150"  />
+        <forms:ChartView x:Name="Grafico" HeightRequest="150" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  />
     </StackLayout>
 
    

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CajuBio.Model
 {
-    class FormacaoUsuario
+    public class FormacaoUsuario
     {
         public int id { get; set; }
         public string descricao { get; set; }

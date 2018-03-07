@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CajuBio.Model
 {
-    class ExperienciaUsuario
+    public class ExperienciaUsuario
     {
         public int id { get; set; }
-        public string descricaoo { get; set; }
+        public string descricao { get; set; }
     }
 }

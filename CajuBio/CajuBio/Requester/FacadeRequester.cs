@@ -38,5 +38,17 @@ namespace CajuBio.Requester
             UsuarioRequester requester = new UsuarioRequester();
             return requester.readAll();
         }
+
+        public List<Guia> readGuiaChildsOf(int idPai)
+        {
+            GuiaRequester requester = new GuiaRequester();
+            return requester.readChildsOf(idPai);   
+        }
+
+        public ItemGuia readItemGuia(int idPai)
+        {
+            ItemGuiaRequester requester = new ItemGuiaRequester();
+            return requester.readItemFromPai(idPai);
+        }
     }
 }

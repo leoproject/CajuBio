@@ -18,5 +18,11 @@ namespace CajuBio.View
 			InitializeComponent ();
             BindingContext = new ViewModelItemGuia();
 		}
-	}
+
+        public ViewItemGuia(int idpai)
+        {
+            InitializeComponent();
+            BindingContext = new ViewModelItemGuia(idpai);
+        }
+    }
 }

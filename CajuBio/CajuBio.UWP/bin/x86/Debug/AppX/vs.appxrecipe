@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-07T01:08:27.701</Modified>
+      <Modified>2018-03-07T19:33:52.966</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\CajuBio.UWP.exe">
       <PackagePath>entrypoint\CajuBio.UWP.exe</PackagePath>
-      <Modified>2018-03-07T01:08:24.183</Modified>
+      <Modified>2018-03-07T19:33:43.214</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\.nuget\packages\microcharts.forms\0.6.2\lib\portable-net45+win8+wpa81+wp8\Microcharts.Forms.dll">
       <PackagePath>Microcharts.Forms.dll</PackagePath>
@@ -952,11 +952,11 @@
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-07T01:08:25.412</Modified>
+      <Modified>2018-03-07T19:33:51.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leonardo\Desktop\Projeto Engenharia de Software\CajuBio\CajuBio\CajuBio.UWP\bin\x86\Debug\Core\CajuBio.UWP.exe">
       <PackagePath>CajuBio.UWP.exe</PackagePath>
-      <Modified>2018-03-07T01:08:27.685</Modified>
+      <Modified>2018-03-07T19:33:52.957</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -2,15 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CajuBio.View.ViewGuia">
+    
     <StackLayout  BackgroundColor="White">
         <Image Source="c1.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
-        <ListView ItemsSource="{Binding Guias}"  RefreshCommand="{Binding itemSelecionadoCommand}" HasUnevenRows="True"  HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
+        <ListView ItemsSource="{Binding Guias, Mode=TwoWay}"  SelectedItem="{Binding Guia, Mode=TwoWay}" RefreshCommand="{Binding itemSelecionadoCommand}" HasUnevenRows="True"  HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="80">
+                    <ViewCell Height="100">
                         <StackLayout Padding="5,5" Orientation="Vertical">
                             <Label Text="{Binding titulo}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" TextColor="#061930" FontSize="Medium"/>
-                            <Label Text="{Binding descricao}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" TextColor="#024A59" FontSize="Small"/>
+                            <Label Text="{Binding descricao}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" TextColor="#989599" FontSize="Small"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

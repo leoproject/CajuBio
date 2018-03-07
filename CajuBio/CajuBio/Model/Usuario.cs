@@ -14,8 +14,5 @@ namespace CajuBio.Model
         public int formacao { get; set; }
         public int tipo { get; set; }
         public int vinculo { get; set; }
-
-        
-
     }
 }

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CajuBio.View.ViewEditarUsuario"
+             Title="Editar Usuário">
+    <StackLayout BackgroundColor="#E6E7E9">
+        <Image Source="c2.png" Aspect="Fill" HorizontalOptions="FillAndExpand" HeightRequest="160" />
+        <!-- Menu de Rastreamento do caminho-->
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Gestão da Informação >" FontSize="Small" TextColor="#C9CACC" />
+            <Label Text="Administrar os Usuários>" FontSize="Small" TextColor="#C9CACC" />
+            <Label Text="Editar Usuário." FontSize="Small" TextColor="#024A59" />
+        </StackLayout>
+        <ScrollView>
+        <StackLayout  BackgroundColor="#FFFFFF">
+            <Entry Placeholder="Digite seu nome" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="Digite seu e-mail" TextColor="#082140" PlaceholderColor="#848587" HorizontalTextAlignment="Center"/>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Label Text="Categoria de Acesso"  TextColor="#848587" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+                    <Picker TextColor="#082140" HorizontalOptions="FillAndExpand" >
+                        <Picker.Items>
+                            <x:String>Usuário</x:String>
+                            <x:String>Inspetor</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Label Text="Setor"  TextColor="#848587" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+                    <Picker TextColor="#082140" HorizontalOptions="FillAndExpand" >
+                        <Picker.Items>
+                            <x:String>Enfermaria</x:String>
+                            <x:String>UTI</x:String>
+                            <x:String>EMERGÊNCIA</x:String>
+                            <x:String>CLINICA 1</x:String>
+                            <x:String>CLINICA 2</x:String>
+                            <x:String>CLINICA 3</x:String>
+                            <x:String>HU</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Label Text="Formação"  TextColor="#848587" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+                    <Picker HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                            <x:String>Microsoft</x:String>
+                            <x:String>Google</x:String>
+                            <x:String>Xamarin</x:String>
+                            <x:String>RedHat</x:String>
+                            <x:String>Facebook</x:String>
+                            <x:String>Twitter</x:String>
+                            <x:String>Instagram</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button 
+                Text="Editar"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="80"
+                BackgroundColor="#082140"
+                    Command="{Binding editarCommand}"
+                TextColor="#E6E7E9"/>
+
+                <Button
+                Text="Cancelar"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="80"
+                    Command="{Binding cancelarCommand}"
+                BackgroundColor="#BF2B2B"
+                TextColor="#E6E7E9"/>
+            </StackLayout>
+
+        </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
